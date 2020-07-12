@@ -1,0 +1,44 @@
+@import "./app.config";
+
+@import "./styles/font-face";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-smooth: always;
+  font-smooth: 2em;
+  webkit-font-smoothing: antialiased;
+  font-family: 'OpenSans', 'Helvetica', Helvetica, sans-serif;
+  color: $prm_txt;
+}
+
+
+.txt, .input, button, label, span, p, h1, h2, h3, h4, li, i {
+	font-size: 10px;
+	font-weight: 400;
+
+	text-align: justify;
+
+	max-width: 100%;
+	vertical-align: middle;
+
+	padding: 0;
+	margin: 0;
+  
+	&.xs { font-size: 5px; }
+	&.sm { font-size: 9px; }
+	&.lg { font-size: 13px; }
+	&.xl, &.xl0 { font-size: 18px; }
+	&.xl1 { font-size: 21px; }
+	&.xl2 { font-size: 25px; }
+}
+
+.aligned {
+	display: inline-block;
+	vertical-align: middle;
+}

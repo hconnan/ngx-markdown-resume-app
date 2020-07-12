@@ -1,0 +1,29 @@
+@import "../app.config";
+
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: $div_txt;
+
+  text-align: center;
+
+  padding: 20px 0;
+
+  .page-holder {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media print {
+  :host {
+    padding: 0;
+    background-color: #FFF;
+
+  }
+}

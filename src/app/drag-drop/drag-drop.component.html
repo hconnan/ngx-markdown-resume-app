@@ -1,0 +1,5 @@
+<markdown [data]="content"></markdown>
+
+<div class="drag-drop shield" (click)="fileInput.click()" fileDragDrop (onFileDropped)="getFileContent($event)">
+  <input hidden accept=".md" multiple='multiple' type="file" #fileInput (change)="getFileContent($event.target.files)">
+</div>
