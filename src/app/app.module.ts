@@ -32,7 +32,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     DragDropModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {})
   ],
   providers: [],
   bootstrap: [
